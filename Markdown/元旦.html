@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.4/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.3.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.1.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(function anonymous(
+) {
+const toolbar = new markmap.Toolbar();
+toolbar.attach(mm);
+const el = toolbar.render();
+el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+document.body.append(el);
+})</script><script>((getMarkmap, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', null, data);
+      })(() => window.markmap,{"t":"root","d":0,"v":"","c":[{"t":"heading","d":1,"p":{},"v":"星期4","c":[{"t":"ordered_list","d":2,"p":{"start":1},"v":"","c":[{"t":"list_item","d":3,"p":{"index":1},"v":"1. 椰子鸡"}]},{"t":"heading","d":2,"p":{},"v":"住宿31号","c":[{"t":"list_item","d":4,"p":{"index":1},"v":"1. 香雪地铁站附近"}]}]},{"t":"heading","d":1,"p":{},"v":"星期5","c":[{"t":"heading","d":2,"p":{},"v":"白天","c":[{"t":"list_item","d":4,"p":{"index":1},"v":"1. 石室圣心大教堂"},{"t":"list_item","d":4,"p":{"index":2},"v":"2. 沙面岛"},{"t":"list_item","d":4,"p":{"index":3},"v":"3. 陈家祠"},{"t":"list_item","d":4,"p":{"index":4},"v":"4. 上下九步行街"}]},{"t":"heading","d":2,"p":{},"v":"晚上","c":[{"t":"list_item","d":4,"p":{"index":1},"v":"1. 正佳海洋世界"}]},{"t":"heading","d":2,"p":{},"v":"住宿1号","c":[{"t":"list_item","d":4,"p":{"index":1},"v":"1. 正佳广场附近"}]},{"t":"heading","d":2,"p":{},"v":"吃饭（廖婷）","c":[{"t":"list_item","d":4,"p":{"index":1},"v":"1. 正佳广场附近"}]}]}],"p":{}})</script>
+</body>
+</html>
